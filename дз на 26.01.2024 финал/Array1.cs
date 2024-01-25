@@ -41,7 +41,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        static void PrintArray()
+        public void PrintArray()
         {
             foreach (int el in Array)
             {

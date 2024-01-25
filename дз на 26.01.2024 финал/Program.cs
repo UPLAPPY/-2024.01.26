@@ -35,7 +35,11 @@ namespace дз_на_26._01._2024_финал
                 com = Console.ReadLine();
                 while (com != "Stop")
                 {
-                    if (com == "Average")
+                    if (com == "Show")
+                    {
+                        arr.PrintArray();
+                    }
+                    else if (com == "Average")
                     {
                         arr.Average();
                     }
