@@ -105,7 +105,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        public static void ArrayOutput()
+        public void ArrayOutput()
         {
             for (int i = 0; i < arr.Length; i++)
             {

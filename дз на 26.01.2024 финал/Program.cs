@@ -59,6 +59,7 @@ namespace дз_на_26._01._2024_финал
                     {
                         Console.WriteLine("Команда не распознана");
                     }
+                    Console.WriteLine("Введите команду:");
                     com = Console.ReadLine();
                 }
             }
@@ -76,7 +77,7 @@ namespace дз_на_26._01._2024_финал
                 Console.WriteLine("Список команд: \n" +
                     "Average - найти и вывести среднее значение массива \n" +
                     "Output - вывести существующую матрицу, \n " +
-                    "а затем её же, печатая элементы четных строк в обратном порядке \n" +
+                    "       а затем её же, печатая элементы четных строк в обратном порядке \n" +
                     "Stop - остановить выполнение программы");
                 com = Console.ReadLine();
                 while (com != "Stop")
@@ -98,6 +99,7 @@ namespace дз_на_26._01._2024_финал
                     {
                         Console.WriteLine("Команда не распознана, попробуйте еще раз");
                     }
+                    Console.WriteLine("Введите команду:");
                     com = Console.ReadLine();
                 }
             }
@@ -110,12 +112,17 @@ namespace дз_на_26._01._2024_финал
                 input_ch = Convert.ToBoolean(Console.ReadLine());
                 Array3 arr = new Array3(stroki, input_ch);
                 Console.WriteLine("Список команд: \n" +
+                    "Show - вывести исходный массив \n" +
                     "Average - найти среднее значение во всем массиве \n" +
                     "Average_Each - найти средние значения во всех вложенных массивах \n" +
-                    "ChangedArray - изменить все четные по значению элементы массива на произведения их индексов");
+                    "ChangedArray - заменить все четные по значению элементы массива на произведения их индексов");
                 com = Console.ReadLine();
                 while (com != "Stop")
                 {
+                    if (com == "Show")
+                    {
+                        arr.ArrayOutput();
+                    }
                     if (com == "Average")
                     {
                         arr.Big_Average();
@@ -136,6 +143,7 @@ namespace дз_на_26._01._2024_финал
                     {
                         Console.WriteLine("Команда не распознана, попробуйте еще раз");
                     }
+                    Console.WriteLine("Введите команду:");
                     com = Console.ReadLine();
                 }
             }
