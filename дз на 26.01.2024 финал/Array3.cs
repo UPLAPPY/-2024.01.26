@@ -8,9 +8,9 @@ namespace дз_на_26._01._2024_финал
 {
     class Array3
     {
-        public static int stroki, stolbiki;
-        public static int[][] arr;
-        public static bool _avto_input = false;
+        private int stroki, stolbiki;
+        private int[][] arr;
+        private bool _avto_input = false;
 
         static Random rnd = new Random();
 
