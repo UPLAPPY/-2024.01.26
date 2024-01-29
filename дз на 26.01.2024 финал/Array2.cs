@@ -30,6 +30,22 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
+        public void Create(int Str, int Stl, int AvtoInput)
+        {
+            stroki = Str;
+            stolbiki = Stl;
+            arr = new int[stroki, stolbiki];
+            _AvtoInput = AvtoInput;
+            if (_AvtoInput)
+            {
+                Avto_Input();
+            }
+            else
+            {
+                ArrayInput();
+            }
+        }
+
         private static void Avto_Input()
         {
             for (int i = 0; i < stroki; i++)

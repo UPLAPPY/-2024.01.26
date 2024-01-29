@@ -29,6 +29,21 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
+        public void Create(int Str, bool avto_input)
+        {
+            stroki = Str;
+            _avto_input = avto_input;
+            arr = new int[stroki][];
+            if (_avto_input)
+            {
+                AvtoInput();
+            }
+            else
+            {
+                InputArray();
+            }
+        }
+
         public static void AvtoInput()
         {
             for (int i = 0; i < stroki; i++)

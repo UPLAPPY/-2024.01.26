@@ -27,7 +27,9 @@ namespace дз_на_26._01._2024_финал
                 Console.WriteLine("Введите false, если хотите заполнить массив самостоятельно");
                 input_ch = Convert.ToBoolean(Console.ReadLine());
                 Array1 arr = new Array1(len, input_ch);
-                Console.WriteLine("Список команд: Show - вывести исходный массив");
+                Console.WriteLine("Список команд: \n" +
+                                + "Create - перезаписать массив \n" +
+                                + "Show - вывести исходный массив");
                 Console.WriteLine("Average - найти и вывести среднее значение в массиве");
                 Console.WriteLine("Delete - удалить все элементы, бльшие 100 по модулю");
                 Console.WriteLine("DeleteRepeat - удалить все повторяющиеся элементы");
@@ -75,6 +77,7 @@ namespace дз_на_26._01._2024_финал
                 input_ch = Convert.ToBoolean(Console.ReadLine());
                 Array2 arr = new Array2(stroki, stolbiki, input_ch);
                 Console.WriteLine("Список команд: \n" +
+                    "Create - перезаписать массив: \n" +
                     "Average - найти и вывести среднее значение массива \n" +
                     "Output - вывести существующую матрицу, \n " +
                     "       а затем её же, печатая элементы четных строк в обратном порядке \n" +
@@ -112,6 +115,7 @@ namespace дз_на_26._01._2024_финал
                 input_ch = Convert.ToBoolean(Console.ReadLine());
                 Array3 arr = new Array3(stroki, input_ch);
                 Console.WriteLine("Список команд: \n" +
+                    "Create - перезаписать массивL: \n" +
                     "Show - вывести исходный массив \n" +
                     "Average - найти среднее значение во всем массиве \n" +
                     "Average_Each - найти средние значения во всех вложенных массивах \n" +
@@ -119,11 +123,15 @@ namespace дз_на_26._01._2024_финал
                 com = Console.ReadLine();
                 while (com != "Stop")
                 {
-                    if (com == "Show")
+                    if (com == "Create")
+                    {
+                        arr.Create();
+                    }
+                    else if (com == "Show")
                     {
                         arr.ArrayOutput();
                     }
-                    if (com == "Average")
+                    else if (com == "Average")
                     {
                         arr.Big_Average();
                     }
