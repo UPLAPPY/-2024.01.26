@@ -16,20 +16,15 @@ namespace дз_на_26._01._2024_финал
 
         public Array1(int len, bool avto_input)
         {
-            _len = len;
-            _avto_input = avto_input;
-            Array = new int[_len];
-            if (_avto_input)
-            {
-                AvtoInput();
-            }
-            else
-            {
-                ArrayInput();
-            }
+            CreateInner()
         }
 
         public void Create(int len, bool avto_input())
+        {
+            CreateInner();
+        }
+
+        private void CreateInner()
         {
             _len = len;
             _avto_input = avto_input;
