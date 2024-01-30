@@ -24,7 +24,7 @@ namespace дз_на_26._01._2024_финал
             CreateInner();
         }
 
-        private void CreateInner()
+        private void CreateInner(int len, int avto_input)
         {
             _len = len;
             _avto_input = avto_input;
