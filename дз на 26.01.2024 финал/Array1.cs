@@ -19,7 +19,7 @@ namespace дз_на_26._01._2024_финал
             CreateInner()
         }
 
-        public void Create(int len, bool avto_input())
+        public void Create(int len, bool avto_input)
         {
             CreateInner();
         }
