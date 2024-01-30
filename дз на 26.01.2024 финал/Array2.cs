@@ -16,15 +16,15 @@ namespace дз_на_26._01._2024_финал
 
         public Array2(int Str, int Stl, bool AvtoInput)
         {
-            CreateInner();
+            CreateInner(Str, Stl, AvtoInput);
         }
 
         public void Create(int Str, int Stl, int AvtoInput)
         {
-            CreateInner();
+            CreateInner(Str, Stl, AvtoInput);
         }
 
-        private void CreateInner()
+        private void CreateInner(int Str, int Stl, int AvtoInput)
         {
             stroki = Str;
             stolbiki = Stl;

@@ -16,14 +16,14 @@ namespace дз_на_26._01._2024_финал
 
         public Array3(int Str, bool avto_input)
         {
-            CreateInner();
+            CreateInner(Str, avto_input);
         }
 
         public void Create(int Str, bool avto_input)
         {
-            CreateInner();
+            CreateInner(Str, avto_input);
         }
-        private void CreateInner()
+        private void CreateInner(int Str, int avto_input)
         {
             stroki = Str;
             _avto_input = avto_input;
