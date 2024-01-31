@@ -39,7 +39,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        static void ArrayInput()
+        private void ArrayInput()
         {
                 Console.WriteLine("Введите элементы, каждый с новой строки");
                 for (int i = 0; i < _len; i++)
@@ -48,7 +48,7 @@ namespace дз_на_26._01._2024_финал
                 }
         }
 
-        static void AvtoInput()
+        private void AvtoInput()
         {
             for (int i = 0; i < _len; i++)
             {

@@ -40,7 +40,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        private static void Avto_Input()
+        private void Avto_Input()
         {
             for (int i = 0; i < stroki; i++)
             {
@@ -51,7 +51,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        public static void ArrayInput()
+        public  void ArrayInput()
         {
             Console.WriteLine("Введите матрицу");
             for (int i = 0; i < stroki; i++)

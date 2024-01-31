@@ -38,7 +38,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        public static void AvtoInput()
+        public void AvtoInput()
         {
             for (int i = 0; i < stroki; i++)
             {
@@ -52,7 +52,7 @@ namespace дз_на_26._01._2024_финал
             }
         }
 
-        public static void InputArray()
+        public void InputArray()
         {
             for (int i = 0; i < stroki; i++)
             {
